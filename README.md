@@ -11,7 +11,7 @@
 
 AI-TOD comes with 700,621 object instances for eight categories across 28,036 aerial images. Compared to existing object detection datasets in aerial images, the mean size of objects in AI-TOD is about 12.8 pixels, which is much smaller than others.
 
-<img src="demo/size_ratios.png" width="300px">
+<img src="demo/size_ratios.png" width="600px" div align=center />
 
 ## Download 
 
