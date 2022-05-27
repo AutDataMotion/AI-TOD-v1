@@ -16,21 +16,21 @@ AI-TOD comes with 700,621 object instances for eight categories across 28,036 ae
 
 ## Download 
 
-You need to download the following two parts and use our end-to-end synthesis tool to generate the complete AI-TOD dataset.
-* xView training set [website](http://xviewdataset.org/#dataset)
-* AI-TOD_wo_xview [BaiduDrive] [Google Drive]
-* E2E tool [Folder]
+You need to download the following two parts (xView training set, AI-TOD without xview) and use our end-to-end synthesis tool to generate the complete AI-TOD dataset.
+* xView training set. [website](http://xviewdataset.org/#dataset)
+* AI-TOD_wo_xview. [BaiduDrive:w2dy](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) [Google Drive]
+* E2E aitodtoolkit. [Folder](aitodtoolkit)
 
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
 ## A Guide of Synthesizing AI-TOD
-Step 1 : Download the above files.
+Step 1: Download the aitodtoolkit and the xView training set, AI-TOD without xview.
 
 Step 2: Organize the downloaded files in the following way.
 
 Step 3: Install required packages.
 
-Step 4: Run the E2E tool and get AI-TOD.
+Step 4: Run the E2E aitodtoolkit and get AI-TOD.
 
 ## Evaluation
 Training, Validation and Testing sets are both publicly available now. We report the COCO style performance in the original paper, you can use the [cocoapi-aitod](https://github.com/jwwangchn/cocoapi-aitod) to evaluate the model performance.
