@@ -4,7 +4,7 @@ AI-TOD is a dataset for tiny object detection in aerial images.
 
 [[Paper]](https://drive.google.com/file/d/1IiTp7gilwDCGr8QR_H9Covz8aVK7LXiI/view?usp=sharing)
 
-Please download the [xView trainig set] and [AI-TOD_wo_xview] to synthesize the complete AI-TOD dataset!
+Please download the [xView trainig set](http://xviewdataset.org/#dataset) and [AI-TOD_wo_xview](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) to synthesize the complete AI-TOD dataset!
 
 ![](demo/samples.png)
 
@@ -24,9 +24,24 @@ You need to download the following two parts (xView training set, AI-TOD without
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
 ## A Guide of Synthesizing AI-TOD
-Step 1: Download the aitodtoolkit and the xView training set, AI-TOD without xview.
+Step 1: Downloadthe xView training set, AI-TOD without xview, and clone the aitodtoolkit.
 
 Step 2: Organize the downloaded files in the following way.
+
+```
+├─aitod
+│  ├─annotations
+│  └─images
+│      ├─test
+│      ├─train
+│      ├─trainval
+│      └─val
+├─aitod_xview
+└─xview
+    └─ori
+        └─train_images
+```
+
 
 Step 3: Install required packages.
 
