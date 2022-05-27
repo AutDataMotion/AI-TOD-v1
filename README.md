@@ -11,14 +11,14 @@
 
 AI-TOD comes with 700,621 object instances for eight categories across 28,036 aerial images. Compared to existing object detection datasets in aerial images, the mean size of objects in AI-TOD is about 12.8 pixels, which is much smaller than others.
 
-<img src="demo/size_ratios.png" width="600px" div align=center />
+<img src="demo/size_ratios.png" width="500px" div align=center />
 
 ## Download 
 
 You need to download the following two parts (xView training set, AI-TOD without xview) and use our end-to-end synthesis tool to generate the complete AI-TOD dataset.
-* xView training set. [website](http://xviewdataset.org/#dataset)
-* AI-TOD_wo_xview. [BaiduDrive:w2dy](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) [Google Drive]
-* E2E aitodtoolkit. [Folder](aitodtoolkit)
+* xView training set. [[Website]](http://xviewdataset.org/#dataset)
+* AI-TOD_wo_xview. [[BaiduDrive:w2dy]](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) [Google Drive]
+* E2E aitodtoolkit. [[Folder]](aitodtoolkit)
 
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
