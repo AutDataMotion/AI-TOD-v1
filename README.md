@@ -30,16 +30,17 @@ Step 2: Organize the downloaded files in the following way.
 
 ```
 ├─aitod
-│  ├─annotations
+│  ├─annotations # put the downloaded annotations
 │  └─images
-│      ├─test
-│      ├─train
+│      ├─test # unzip the downloaded test set images, put them here without extra folder
+│      ├─train # unzip the downloaded test set images, put them here without extra folder
 │      ├─trainval
 │      └─val
 ├─aitod_xview
-└─xview
-    └─ori
-        └─train_images
+├─xview
+│  └─ori
+│      └─train_images
+└─generate_aitod.py
 ```
 
 
