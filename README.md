@@ -22,7 +22,7 @@ You need to download the following two parts (xView training set, AI-TOD without
 
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
-## A Guide of Synthesizing AI-TOD
+## A Guide of Generating AI-TOD
 **Step 1:** Downloadthe xView training set, AI-TOD without xview, and clone the aitodtoolkit.
 
 ```
@@ -50,8 +50,8 @@ git clone
 **Step 3:** Install required packages.
 
 * Required environment
-- Python 3.7
-- [mmcv](https://github.com/open-mmlab/mmcv)
+1. Python 3.7
+2. [mmcv](https://github.com/open-mmlab/mmcv)
 
 * Install [wwtool](https://github.com/jwwangchn/wwtool)
 
