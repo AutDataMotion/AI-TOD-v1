@@ -23,7 +23,7 @@ You need to download the following two parts (xView training set, AI-TOD without
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
 ## A Guide of Generating AI-TOD
-**Step 1:** Downloadthe xView training set, AI-TOD without xview, and clone the aitodtoolkit.
+**Step 1:** Download the xView training set, AI-TOD without xview, and clone the aitodtoolkit.
 
 ```
 git clone
@@ -33,18 +33,18 @@ git clone
 
 ```
 ├─aitod
-│  ├─annotations # put the downloaded annotations
-│  └─images # unzip the downloaded AI-TOD_wo_xview image sets, put them in the corresponding folder
-│      ├─test # directly put the images in it without extra folder
+│  ├─annotations ## put the downloaded annotations of AI-TOD_wo_xview (.json)**
+│  └─images ## unzip the downloaded AI-TOD_wo_xview image sets, put them (.png) in the corresponding folder
+│      ├─test ## directly put the images in it without extra folder
 │      ├─train 
 │      ├─trainval 
 │      └─val 
-├─aitod_xview # here are six files (.txt)
+├─aitod_xview ## here are six files (.txt)
 ├─xview
 │  ├─ori
-│  │   └─train_images # unzip the downloaded xView training set images, put them here
-│  └─xView_train.geojson # the annotation file of xView training set
-└─generate_aitod.py # end-to-end tool
+│  │   └─train_images ## unzip the downloaded xView training set images, put them (.tif) here
+│  └─xView_train.geojson ## the annotation file of xView training set
+└─generate_aitod.py ## end-to-end tool
 ```
 
 **Step 3:** Install required packages.
