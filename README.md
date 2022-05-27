@@ -68,11 +68,12 @@ cd aitodtoolkit
 pip install -r requirements.txt
 ```
 
-**Step 4:** Run the E2E aitodtoolkit and get AI-TOD, it might take around an hour, the full 
+**Step 4:** Run the E2E aitodtoolkit and get AI-TOD, it might take around an hour, then the full image sets and annotations of AI-TOD can be found in the **aitod** folder.
 
 ```
 python generate_aitod.py
 ```
+
 
 ## Evaluation
 Training, Validation and Testing sets are both publicly available now. We report the COCO style performance in the original paper, you can use the [cocoapi-aitod](https://github.com/jwwangchn/cocoapi-aitod) to evaluate the model performance.
