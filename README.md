@@ -31,22 +31,44 @@ Step 2: Organize the downloaded files in the following way.
 ```
 ├─aitod
 │  ├─annotations # put the downloaded annotations
-│  └─images
-│      ├─test # unzip the downloaded test set images, put them here without extra folder
-│      ├─train # unzip the downloaded test set images, put them here without extra folder
-│      ├─trainval
-│      └─val
-├─aitod_xview
+│  └─images # unzip the downloaded AI-TOD_wo_xview image sets, put them in the corresponding folder
+│      ├─test # directly put the images in it without extra folder
+│      ├─train 
+│      ├─trainval 
+│      └─val 
+├─aitod_xview # here are six files (.txt)
 ├─xview
-│  └─ori
-│      └─train_images
-└─generate_aitod.py
+│  ├─ori
+│  │   └─train_images # unzip the downloaded xView training set images, put them here
+│  └─xView_train.geojson # the annotation file of xView training set
+└─generate_aitod.py # end-to-end tool
 ```
-
 
 Step 3: Install required packages.
 
+* Required environment
+
+
+* Install [wwtool](https://github.com/jwwangchn/wwtool)
+
+```
+git clone https://github.com/jwwangchn/wwtool.git
+cd wwtool
+python setup.py develop
+```
+* Install other required packages
+
+```
+cd ..
+cd aitodtoolkit
+pip install -r requirements.txt
+```
+
 Step 4: Run the E2E aitodtoolkit and get AI-TOD.
+
+```
+python generate_aitod.py
+```
 
 ## Evaluation
 Training, Validation and Testing sets are both publicly available now. We report the COCO style performance in the original paper, you can use the [cocoapi-aitod](https://github.com/jwwangchn/cocoapi-aitod) to evaluate the model performance.
