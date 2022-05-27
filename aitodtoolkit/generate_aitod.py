@@ -10,7 +10,6 @@ from tqdm import tqdm
 from PIL import Image
 from skimage.io import imread
 
-
 from wwtool.datasets import Convert2COCO
 import wwtool
 
@@ -389,11 +388,7 @@ if __name__ == '__main__':
         
         anno_name.append('small')
 
-        if generate_small_dataset:
-            dst_image_path = 'xview/small/{}/images'.format(set)
-            dst_label_path = 'xview/small/{}/labels'.format(set)
-            wwtool.mkdir_or_exist(dst_image_path)
-            wwtool.mkdir_or_exist(dst_label_path)
+
 
         if keypoint:
             for idx in range(len(converted_class)):
@@ -435,12 +430,17 @@ if __name__ == '__main__':
         with open(os.path.join(save_path, "_".join(anno_name) + ".json"), "w") as jsonfile:
             json.dump(json_data, jsonfile, sort_keys=True, indent=4)
     
+    sets = ['val','train','trainval','test']
+
+    path = inspect.getfile(inspect.currentframe())
+    abspath = os.path.abspath(path) # get the abs path of current file
+    pre_abspath = abspath.split('generate_aitod.py')
 
     ###############################
     # merge the result of aitod_wo_xview and xview
     for set in sets:
 
-        src_ann_file = 'aitod/annotations/{}/aitod_wo_xview_{}.json'.format(set,set)
+        src_ann_file = 'aitod/annotations/aitod_wo_xview_{}.json'.format(set)
         ext_ann_file = 'xview/annotations/xview_{}_small.json'.format(set)
         dst_ann_file = 'aitod/annotations/aitod_{}.json'.format(set)
 
@@ -450,8 +450,8 @@ if __name__ == '__main__':
     # move xview-aitod files into 
     for set in sets:
 
-        xview_aitoid = os.listdir('xview/small/{}/images'.format(set))
-        abs_src_dir = os.path.join(pre_abspath[0], 'xview/small/{}/images'.format(set))
+        xview_aitoid = os.listdir('xview/xview_aitod_sets/{}/images'.format(set))
+        abs_src_dir = os.path.join(pre_abspath[0], 'xview/xview_aitod_sets/{}/images'.format(set))
         abs_dst_dir = os.path.join(pre_abspath[0], 'aitod/images/{}'.format(set))
         for item in xview_aitoid:
             abs_src_img = os.path.join(abs_src_dir, item)
@@ -460,8 +460,3 @@ if __name__ == '__main__':
 
     # delete irrelevant temp files 
     # to do
-
-
-
-
-

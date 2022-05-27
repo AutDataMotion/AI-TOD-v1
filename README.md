@@ -23,13 +23,13 @@ You need to download the following two parts (xView training set, AI-TOD without
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
 
 ## A Guide of Synthesizing AI-TOD
-Step 1: Downloadthe xView training set, AI-TOD without xview, and clone the aitodtoolkit.
+**Step 1:** Downloadthe xView training set, AI-TOD without xview, and clone the aitodtoolkit.
 
 ```
-
+git clone
 ```
 
-Step 2: Organize the downloaded files in the following way.
+**Step 2:** Organize the downloaded files in the following way.
 
 ```
 ├─aitod
@@ -47,10 +47,11 @@ Step 2: Organize the downloaded files in the following way.
 └─generate_aitod.py # end-to-end tool
 ```
 
-Step 3: Install required packages.
+**Step 3:** Install required packages.
 
 * Required environment
-
+- Python 3.7
+- [mmcv](https://github.com/open-mmlab/mmcv)
 
 * Install [wwtool](https://github.com/jwwangchn/wwtool)
 
@@ -67,7 +68,7 @@ cd aitodtoolkit
 pip install -r requirements.txt
 ```
 
-Step 4: Run the E2E aitodtoolkit and get AI-TOD.
+**Step 4:** Run the E2E aitodtoolkit and get AI-TOD, it might take around an hour, the full 
 
 ```
 python generate_aitod.py
