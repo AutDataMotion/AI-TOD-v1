@@ -4,7 +4,7 @@ AI-TOD is a dataset for tiny object detection in aerial images.
 
 [[Paper]](https://drive.google.com/file/d/1IiTp7gilwDCGr8QR_H9Covz8aVK7LXiI/view?usp=sharing)
 
-Dataset is comming soon.
+Please download the [xView trainig set] and [AI-TOD_wo_xview] to synthesize the complete AI-TOD dataset!
 
 ![](demo/samples.png)
 
@@ -14,10 +14,23 @@ AI-TOD comes with 700,621 object instances for eight categories across 28,036 ae
 
 ![](demo/size_ratios.png)
 
-## Download
+## Download 
 
-Dataset is comming soon.
+You need to download the following two parts and use our end-to-end synthesis tool to generate the complete AI-TOD dataset.
+* xView training set [website](http://xviewdataset.org/#dataset)
+* AI-TOD_wo_xview [BaiduDrive] [Google Drive]
+* E2E tool [Folder]
+
 <!-- You can download the dataset on [Google Drive](https://drive.google.com/drive/folders/1mokzFtLCjyqalSEajYTUmyzXvOHAa4WX?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1r2C_fBwQL4q2NRmDM3-RUw) (Password: 0ire). -->
+
+## A Guide of Synthesizing AI-TOD
+Step 1 : Download the above files.
+
+Step 2: Organize the downloaded files in the following way.
+
+Step 3: Install required packages.
+
+Step 4: Run the E2E tool and get AI-TOD.
 
 ## Evaluation
 Training, Validation and Testing sets are both publicly available now. We report the COCO style performance in the original paper, you can use the [cocoapi-aitod](https://github.com/jwwangchn/cocoapi-aitod) to evaluate the model performance.
@@ -25,7 +38,7 @@ Training, Validation and Testing sets are both publicly available now. We report
 
 ## Citation
 
-If you use this dataset in your research, please cite these papers.
+If you use this dataset in your research, please consider citing these papers.
 
 ```
 @inproceedings{AI-TOD_2020_ICPR,
