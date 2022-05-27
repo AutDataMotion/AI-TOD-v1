@@ -3,7 +3,7 @@
 [[Paper]](https://drive.google.com/file/d/1IiTp7gilwDCGr8QR_H9Covz8aVK7LXiI/view?usp=sharing) AI-TOD is a dataset for tiny object detection in aerial images.
 
 
-[[Dataset]](https://github.com/jwwangchn/AI-TOD) Please download the [xView trainig set](http://xviewdataset.org/#dataset) and [AI-TOD_wo_xview](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) to synthesize the complete AI-TOD dataset!
+[[Dataset]](https://github.com/jwwangchn/AI-TOD) Please download the [xView trainig set](http://xviewdataset.org/#dataset) and [AI-TOD_wo_xview](https://pan.baidu.com/s/1AlhHIxpvkJ1-2ql9JdWqKg) to [construct](aitodtoolkit) the complete AI-TOD dataset!
 
 ![](demo/samples.png)
 
@@ -11,7 +11,7 @@
 
 AI-TOD comes with 700,621 object instances for eight categories across 28,036 aerial images. Compared to existing object detection datasets in aerial images, the mean size of objects in AI-TOD is about 12.8 pixels, which is much smaller than others.
 
-![](demo/size_ratios.png)
+<img src="demo/size_ratios.png" width="300px">
 
 ## Download 
 
